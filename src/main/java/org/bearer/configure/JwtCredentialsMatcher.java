@@ -8,7 +8,7 @@ import org.bearer.util.JedisUtil;
 /**
  * @author Li
  * @version 1.0
- * @date Created in 2021/4/17 14:50
+ * @date Created in 2021/4/17 14:50www
  */
 public class JwtCredentialsMatcher implements CredentialsMatcher {
     @Override
