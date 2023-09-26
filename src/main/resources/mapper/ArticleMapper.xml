@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.bearer.mapper.ArticleMapper">
+
+    <insert id="insertArticle">
+        insert into `cul_article`
+            (`id`, `title`, `article`, `picture_url`, `author_id`, `cuisine_id`, `material_id`)
+        values
+            (#{id}, #{title}, #{article}, #{pictureUrl}, #{authorId}, #{cuisineId}, #{materialId});
+    </insert>
+
+    <update id="updatePraise">
+        update `cul_article`
+        set `praise`=`praise` + 1
+        where `id` = #{id};
+    </update>
+
+    <update id="updateIsExaminedById">
+        update `cul_article`
+        set `is_examined` = 1
+        where `id` = #{id};
+    </update>
+
+    <update id="updateRecommend">
+        update `cul_article`
+        set `recommend` = `recommend` + 1
+        where `id` = #{id};
+    </update>
+
+    <delete id="deleteById">
+        delete
+        from `cul_article`
+        where `id` = #{id};
+    </delete>
+
+    <select id="selectList" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`
+             , `art`.`title`
+             , `art`.`picture_url`
+             , `user`.`username`
+             , `cui`.`category`
+             , `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `art`.`author_id` = `user`.`id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        WHERE `art`.`is_examined` = 1
+        ORDER BY `art`.`recommend`
+            LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectOne" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`,
+               `art`.`title`,
+               `art`.`article`,
+               `art`.`picture_url`,
+               `art`.`recommend`,
+               `art`.`praise`,
+               `user`.`username`,
+               `art`.`create_time`,
+               `cui`.`category`,
+               `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `art`.`author_id` = `user`.`id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        where `art`.`id` = #{id}
+          AND `art`.`is_examined` = 1;
+    </select>
+
+    <select id="selectArticleSearchByTitle" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`
+             , `art`.`title`
+             , `art`.`picture_url`
+             , `user`.`username`
+             , `cui`.`category`
+             , `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `art`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        where `art`.`title` like "%"#{searchContent}"%" AND `art`.`is_examined` = 1 LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectArticleSearchByAuthorId" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`
+             , `art`.`title`
+             , `art`.`picture_url`
+             , `user`.`username`
+             , `cui`.`category`
+             , `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `art`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        where `art`.`author_id` = #{authorId}
+          AND `art`.`is_examined` = 1 LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectListByIsExamined" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`
+             , `art`.`title`
+             , `art`.`picture_url`
+             , `user`.`username`
+             , `cui`.`category`
+             , `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `art`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        where `art`.`is_examined` = 0 LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectCountNotExamined" resultType="java.lang.Integer">
+        select count(*)
+        from `cul_article`
+        where `is_examined` = 0;
+    </select>
+
+    <select id="selectCountByTitle" resultType="java.lang.Integer">
+        select COUNT(*)
+        from `cul_article`
+        where `title` like "%"#{searchContent}"%"
+            AND `is_examined` = 1;
+    </select>
+
+    <select id="selectByCuisine" resultType="org.bearer.entity.vo.ArticleVO">
+        select `art`.`id`
+             , `art`.`title`
+             , `art`.`picture_url`
+             , `user`.`username`
+             , `cui`.`category`
+             , `mat`.`material`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `art`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+        where `art`.`cuisine_id` = #{id}
+          AND `art`.`is_examined` = 1 LIMIT #{start}
+            , #{end};
+
+    </select>
+
+    <select id="selectCountByCuisine" resultType="java.lang.Integer">
+        select count(*)
+        from `cul_article`
+        where `cuisine_id` = #{id}
+          AND `is_examined` = 1;
+    </select>
+
+    <select id="selectCountByAuthorId" resultType="java.lang.Integer">
+        select count(*)
+        from `cul_article`
+        where `author_id` = #{authorId}
+          AND `is_examined` = 1;
+    </select>
+</mapper>

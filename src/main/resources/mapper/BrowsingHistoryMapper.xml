@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.bearer.mapper.BrowsingHistoryMapper">
+
+    <insert id="insertArticleHistory">
+        insert into `cul_browsing_history`
+            (`id`, `article_id`, `user_id`)
+        values
+            (#{id}, #{articleId}, #{userId});
+    </insert>
+
+    <insert id="insertVideoHistory">
+        insert into `cul_browsing_history`
+            (`id`, `video_id`, `user_id`)
+        values
+            (#{id}, #{videoId}, #{userId});
+    </insert>
+
+
+    <select id="selectArticleHistoryByUserId" resultType="org.bearer.entity.vo.BrowsingHistoryVO">
+        select `art`.`id`
+             , `art`.`picture_url`
+             , `art`.`title`
+             , `user`.`username`
+             , `mat`.`material`
+             , `cui`.`category`
+        from `cul_article` AS `art`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `art`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `art`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `art`.`material_id`
+                 INNER JOIN `cul_browsing_history` AS `bh`
+                            ON `bh`.`article_id` = `art`.`id`
+        where `bh`.`user_id` = #{userId} LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectVideoHistoryByUserId" resultType="org.bearer.entity.vo.BrowsingHistoryVO">
+        select `video`.`id`
+             , `video`.`picture_url`
+             , `video`.`title`
+             , `user`.`username`
+             , `mat`.`material`
+             , `cui`.`category`
+        from `cul_video` AS `video`
+                 INNER JOIN `cul_user` AS `user`
+                            ON `user`.`id` = `video`.`author_id`
+                 INNER JOIN `cul_cuisine` AS `cui`
+                            ON `cui`.`id` = `video`.`cuisine_id`
+                 INNER JOIN `cul_material` AS `mat`
+                            ON `mat`.`id` = `video`.`material_id`
+                 INNER JOIN `cul_browsing_history` AS `bh`
+                            ON `bh`.`video_id` = `video`.`id`
+        where `bh`.`user_id` = #{userId} LIMIT #{start}, #{end};
+    </select>
+
+    <select id="selectCountByUserId" resultType="java.lang.Integer">
+        select count(*)
+        from `cul_browsing_history`
+        where `user_id` = #{userId};
+    </select>
+</mapper>
