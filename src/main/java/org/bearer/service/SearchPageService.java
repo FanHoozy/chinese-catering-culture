@@ -5,9 +5,9 @@ import org.bearer.entity.vo.*;
 import java.util.List;
 
 /**
- * @author fanyuhongzhe
+ * @author guanjiamin
  * @description
- * @date 6/10/21 2:12 PM
+ * @date 01/11/23 2:12 PM
  */
 public interface SearchPageService {
     /**

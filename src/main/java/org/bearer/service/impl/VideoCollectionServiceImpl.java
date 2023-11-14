@@ -14,9 +14,9 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/17 12:20
+ * @date Created in 2023/11/01 12:20
  */
 @Service
 public class VideoCollectionServiceImpl implements VideoCollectionService {

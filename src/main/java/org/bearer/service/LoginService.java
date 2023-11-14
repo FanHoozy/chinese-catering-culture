@@ -8,9 +8,9 @@ import org.bearer.entity.dto.SignUp;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/15 9:43
+ * @date Created in 2023/11/01 9:43
  */
 public interface LoginService {
     /**

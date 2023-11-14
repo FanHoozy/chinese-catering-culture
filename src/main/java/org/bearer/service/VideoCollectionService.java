@@ -4,9 +4,9 @@ import org.bearer.entity.dto.Ids;
 import org.bearer.entity.vo.Page;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/17 12:20
+ * @date Created in 2023/11/01 12:20
  */
 public interface VideoCollectionService {
     /**

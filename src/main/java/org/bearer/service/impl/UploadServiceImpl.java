@@ -8,9 +8,9 @@ import java.io.*;
 import java.util.UUID;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/18 15:09
+ * @date Created in 2023/11/01 15:09
  */
 @Service
 public class UploadServiceImpl implements UploadService {
