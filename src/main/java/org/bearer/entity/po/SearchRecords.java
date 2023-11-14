@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * @author fanyuhongzhe
  * @description
- * @date 6/12/21 9:55 PM
+ * @date 10/12/23 9:55 PM
  */
 @Data
 @TableName("cul_search_records")
