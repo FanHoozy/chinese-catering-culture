@@ -15,9 +15,9 @@ import javax.annotation.Resource;
 import java.util.Set;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/4/7 13:24
+ * @date Created in 2023/10/17 13:24
  */
 @Component
 public class MyRealm extends AuthorizingRealm {

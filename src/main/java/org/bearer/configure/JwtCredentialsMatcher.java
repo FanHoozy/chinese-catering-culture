@@ -6,9 +6,9 @@ import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.bearer.util.JedisUtil;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/4/17 14:50
+ * @date Created in 2023/10/17 14:50
  */
 public class JwtCredentialsMatcher implements CredentialsMatcher {
     @Override

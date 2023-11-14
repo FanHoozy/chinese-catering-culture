@@ -7,9 +7,9 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/4/17 11:29
+ * @date Created in 2023/10/17 11:29
  */
 @Configuration
 public class RedisConfig extends JedisPoolConfig {
