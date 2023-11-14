@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * @author Li
  * @version 1.0
- * @date Created in 2021/4/7 13:23
+ * @date Created in 2023/10/7 13:23
  */
 @ConditionalOnClass({RedisConfig.class})
 @Configuration
@@ -66,10 +66,11 @@ public class ShiroConfig extends ShiroConfiguration {
         urls.put("/search/**", "anon");
         urls.put("/dynamic/getDynamic/**", "anon");
         urls.put("/static/**", "anon");
+        urls.put("/upload/**", "anon");
 
         urls.put("/logout", "jwtFilter");
-        urls.put("/**", "jwtFilter,authc");
-//        urls.put("/**","anon");
+//        urls.put("/**", "jwtFilter,authc");
+        urls.put("/**","anon");
         factoryBean.setFilterChainDefinitionMap(urls);
         return factoryBean;
     }

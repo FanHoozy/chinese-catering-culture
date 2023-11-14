@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.async.DeferredResult;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.*;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 import springfox.documentation.schema.WildcardType;
@@ -23,7 +25,7 @@ import static springfox.documentation.schema.AlternateTypeRules.newRule;
 /**
  * @author Li
  * @version 1.0
- * @date Created in 2021/4/21 9:39
+ * @date Created in 2023/10/21 9:39
  */
 @Configuration
 @EnableOpenApi
@@ -31,7 +33,6 @@ public class SwaggerConfig {
 
     @Resource
     private TypeResolver typeResolver;
-
     @Bean
     public Docket petApi() {
         List<Response> responses = new ArrayList<>();
