@@ -7,9 +7,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/20 12:54
+ * @date Created in 2023/10/20 12:54
  */
 @Data
 @ApiModel

@@ -5,9 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/18 14:57
+ * @date Created in 2023/10/18 14:57
  */
 @Data
 public class DynamicDTO implements Serializable {

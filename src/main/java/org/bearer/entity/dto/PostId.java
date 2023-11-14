@@ -5,9 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/19 14:40
+ * @date Created in 2023/10/19 14:40
  */
 @Data
 public class PostId implements Serializable {

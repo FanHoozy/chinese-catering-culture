@@ -5,9 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/19 14:07
+ * @date Created in 2023/10/19 14:07
  */
 @Data
 public class ChangePassword implements Serializable {

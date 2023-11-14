@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * @author fanyuhongzhe
  * @description
- * @date 6/22/21 9:27 AM
+ * @date 10/22/23 9:27 AM
  */
 @Data
 public class VideoDTO implements Serializable {
