@@ -15,9 +15,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author Li
+ * @author chengzhimmin
  * @version 1.0
- * @date Created in 2021/6/15 9:20
+ * @date Created in 2023/10/15 9:20
  */
 @RestController
 public class LoginController {
