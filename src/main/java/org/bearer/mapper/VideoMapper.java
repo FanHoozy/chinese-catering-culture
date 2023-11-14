@@ -8,9 +8,9 @@ import org.bearer.entity.vo.VideoVO;
 import java.util.List;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/10 13:52
+ * @date Created in 2023/11/14 13:52
  */
 @Mapper
 public interface VideoMapper {

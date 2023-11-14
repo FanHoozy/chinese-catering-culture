@@ -3,9 +3,9 @@ package org.bearer.mapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/23 15:40
+ * @date Created in 2023/11/14 15:40
  */
 @Mapper
 public interface MaterialNameMapper {

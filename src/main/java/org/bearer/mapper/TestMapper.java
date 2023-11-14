@@ -3,9 +3,9 @@ package org.bearer.mapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/11 22:16
+ * @date Created in 2023/11/14 22:16
  */
 @Mapper
 public interface TestMapper {

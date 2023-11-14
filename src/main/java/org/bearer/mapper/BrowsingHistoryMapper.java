@@ -9,9 +9,9 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/16 14:10
+ * @date Created in 2023/11/14 14:10
  */
 @Mapper
 public interface BrowsingHistoryMapper {

@@ -7,9 +7,9 @@ import org.bearer.entity.vo.DishNameVO;
 import java.util.List;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/12 18:12
+ * @date Created in 2023/11/12 18:12
  */
 @Mapper
 public interface DishNameMapper {

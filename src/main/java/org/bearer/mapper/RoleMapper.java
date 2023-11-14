@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.Set;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/10 13:48
+ * @date Created in 2023/11/14 13:48
  */
 @Mapper
 public interface RoleMapper {

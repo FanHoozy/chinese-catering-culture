@@ -6,9 +6,9 @@ import org.bearer.entity.po.SearchRecords;
 import java.util.List;
 
 /**
- * @author fanyuhongzhe
+ * @author chenmengyu
  * @description
- * @date 6/12/21 9:44 PM
+ * @date 2023/11/12 9:44 PM
  */
 @Mapper
 public interface SearchRecordsMapper {
