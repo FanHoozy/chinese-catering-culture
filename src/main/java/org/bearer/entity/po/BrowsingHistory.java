@@ -11,9 +11,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/20 21:26
+ * @date Created in 2023/10/20 11:23
  */
 @Data
 public class BrowsingHistory implements Serializable {

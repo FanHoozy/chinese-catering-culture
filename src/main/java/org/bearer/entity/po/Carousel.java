@@ -8,9 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/7 20:38
+ * @date Created in 2023/10/8 20:38
  */
 @Data
 @TableName("cul_carousel")

@@ -8,9 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/7 20:41
+ * @date Created in 2023/10/7 7:23
  */
 @Data
 @TableName("cul_cuisine")

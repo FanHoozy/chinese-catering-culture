@@ -5,9 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/7/4 16:16
+ * @date Created in 2023/10/4 16:16
  */
 @Data
 public class SignUp implements Serializable {

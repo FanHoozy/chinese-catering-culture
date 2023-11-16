@@ -4,9 +4,9 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.bearer.util.JwtUtil;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/4/16 20:19
+ * @date Created in 2023/10/1 20:19
  */
 public class JwtToken implements AuthenticationToken {
 

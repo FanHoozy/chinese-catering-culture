@@ -5,9 +5,9 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/13 21:40
+ * @date Created in 2023/10/17 21:40
  */
 public class MyHashedCredentialsMatcher extends HashedCredentialsMatcher  {
 

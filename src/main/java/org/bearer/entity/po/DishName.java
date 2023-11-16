@@ -10,9 +10,9 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/12 18:11
+ * @date Created in 2023/10/12 12:23
  */
 @Data
 @TableName("cul_dish_name")

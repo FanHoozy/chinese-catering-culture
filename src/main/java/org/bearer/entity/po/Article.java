@@ -11,9 +11,9 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
- * @date Created in 2021/6/7 20:14
+ * @date Created in 2023/10/12 10:06
  */
 @Data
 @TableName("cul_article")
