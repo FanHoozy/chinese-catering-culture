@@ -1,44 +1,44 @@
 # chinese-catering-culture
 中华餐饮文化宣传
 
-- 6.11 22:00 abc-I Add getVideo,ArticleCollection,Ids;Update JedisUtil;Delete Intercept
-- 6.11 22:30 abc-I Update ArticleCollection,TestController,Ids
-- 6.12 19:55 abc-I Update ArticleCollection,Ids,Video;Add DishName
-- 6.12 20:30 abc-I Update getVideo's notes,Video.cuisine's notes,VideoMapper
-- 6.12 21:22 FanHoozy Add SearchPage
-- 6.12 21:45 FanHoozy Add SearchRecordsMapper
-- 6.12 22:01 FanHoozy Add SearchRecords
-- 6.12 22:26 FanHoozy Add SearchRecordsDTO
-- 6.12 22:35 FanHoozy Update SearchRecordsDTO, SearchPage, SearchRecords
-- 6.13 18:05 abc-I Update Article's return data(add picture_url,delete article)
-- 6.13 19:40 abc-I Add ArticleMapper,DishNameMapper,MaterialMapper,SearchRecordsMapper,VideoMapper
-- 6.13 22:35 abc-I Add JwtFilter,ShiroConfig,MyRealm,MyHashedCredentialsMatcher;Update RedisConfig,JedisUtil,User
-- 6.15 17:20 abc-I Add HttpUtil,Login,open HTTPS protocol;Update ShiroConfig,JwtFilter
-- 6.15 22:37 FanHoozy Update SearchPage
-- 6.15 23:24 FanHoozy Add Personal,BrowsingHistory
-- 6.15 23:49 FanHoozy Add Administrator
-- 6.16 13:55 abc-I Update ShiroConfig
-- 6.16 15:10 abc-I Update ShiroConfig;Add BrowsingHistoryMapper
-- 6.16 18:10 abc-I Update Video,SearchRecordsDTO,LoginController,LoginService
-- 6.16 22:45 abc-I Update Login,RedisConfig,ShiroConfig
-- 6.17 14:20 abc-I Add JwtRealm,JwtCredentialsMatcher,Praise;Update Video,Article,Login;Delete Praise,JedisUtil
-- 6.17 22:55 abc-I Add MD5Util,Page,PageDTO,PageUtil;Update UserMapper,UserRoleMapper,UserVO,VideoMapper;Delete UserDTO,Admin
-- 6.18 16:35 abc-I Add Dynamic's,Administrator's mapper,UploadController,UploadService
-- 6.18 21:25 abc-I Add notes,Page;Update annotation
-- 6.19 12:55 abc-I Add update recommend
-- 6.19 13:54 FanHoozy Update Administrator
-- 6.19 21:27 abc-I Add Login.java,PostId,Role.java,ChangePassword;Update AdministratorController,ArticleCollection,Dynamic,VideoCollection
-- 6.20 12:25 abc-I Update LoginService,JedisConfig
-- 6.20 15:35 abc-I Add UserInfo,UserProfile;Update Praise,ArticleMapper,VideoMapper
-- 6.20 16:14 FanHoozy Update Administrator
-- 6.20 18:20 abc-I Add deleteVideo,authority control;Update weChatLogin,lockedUser
-- 6.20 19:16 abc-I Add transactional,authority control,logout
-- 6.20 22:10 abc-I Add history paging,save history,get article and video by cuisine
-- 6.21 12:30 abc-I Add swagger annotation
-- 6.21 16:35 abc-I Update Authority verification,perfect the details
-- 6.22 09:41 FanHoozy Update VideoPO,ArticlePO,PersonalPage
-- 6.22 11:00 abc-I Update upload;Add insert Video,insert Article
-- 6.22 18:48 abc-I Add CorsFilter;Update VideoMapper,ArticleMapper,Transactional
-- 6.23 10:00 FanHoozy Update Article,Video,PersonalPage Add DishArticleDTO,DishVideoDTO
-- 6.23 21:45 abc-I Update resources path,upload path
-- 6.26 15:30 abc-I Update shiro's urls
+- 10.11 22:00 chenyan Add getVideo,ArticleCollection,Ids;Update JedisUtil;Delete Intercept
+- 10.11 22:30 chenyan Update ArticleCollection,TestController,Ids
+- 10.12 19:55 chenyan Update ArticleCollection,Ids,Video;Add DishName
+- 10.12 20:30 chenyan Update getVideo's notes,Video.cuisine's notes,VideoMapper
+- 10.12 21:22 fanyuhongzhe Add SearchPage
+- 10.12 21:45 fanyuhongzhe Add SearchRecordsMapper
+- 10.12 22:01 fanyuhongzhe Add SearchRecords
+- 10.12 22:26 fanyuhongzhe Add SearchRecordsDTO
+- 10.12 22:35 fanyuhongzhe Update SearchRecordsDTO, SearchPage, SearchRecords
+- 10.13 18:05 chenyan Update Article's return data(add picture_url,delete article)
+- 10.13 19:40 chenyan Add ArticleMapper,DishNameMapper,MaterialMapper,SearchRecordsMapper,VideoMapper
+- 10.13 22:35 chenyan Add JwtFilter,ShiroConfig,MyRealm,MyHashedCredentialsMatcher;Update RedisConfig,JedisUtil,User
+- 10.15 17:20 chenyan Add HttpUtil,Login,open HTTPS protocol;Update ShiroConfig,JwtFilter
+- 10.15 22:37 fanyuhongzhe Update SearchPage
+- 10.15 23:24 fanyuhongzhe Add Personal,BrowsingHistory
+- 10.15 23:49 fanyuhongzhe Add Administrator
+- 10.16 13:55 chenyan Update ShiroConfig
+- 10.16 15:10 chenyan Update ShiroConfig;Add BrowsingHistoryMapper
+- 10.16 18:10 chenyan Update Video,SearchRecordsDTO,LoginController,LoginService
+- 10.16 22:45 chenyan Update Login,RedisConfig,ShiroConfig
+- 10.17 14:20 chenyan Add JwtRealm,JwtCredentialsMatcher,Praise;Update Video,Article,Login;Delete Praise,JedisUtil
+- 10.17 22:55 chenyan Add MD5Util,Page,PageDTO,PageUtil;Update UserMapper,UserRoleMapper,UserVO,VideoMapper;Delete UserDTO,Admin
+- 10.18 16:35 chenyan Add Dynamic's,Administrator's mapper,UploadController,UploadService
+- 10.18 21:25 chenyan Add notes,Page;Update annotation
+- 10.19 12:55 chenyan Add update recommend
+- 10.19 13:54 fanyuhongzhe Update Administrator
+- 10.19 21:27 chenyan Add Login.java,PostId,Role.java,ChangePassword;Update AdministratorController,ArticleCollection,Dynamic,VideoCollection
+- 10.20 12:25 chenyan Update LoginService,JedisConfig
+- 10.20 15:35 chenyan Add UserInfo,UserProfile;Update Praise,ArticleMapper,VideoMapper
+- 10.20 16:14 fanyuhongzhe Update Administrator
+- 10.20 18:20 chenyan Add deleteVideo,authority control;Update weChatLogin,lockedUser
+- 10.20 19:16 chenyan Add transactional,authority control,logout
+- 10.20 22:10 chenyan Add history paging,save history,get article and video by cuisine
+- 10.21 12:30 chenyan Add swagger annotation
+- 10.21 16:35 chenyan Update Authority verification,perfect the details
+- 10.22 09:41 fanyuhongzhe Update VideoPO,ArticlePO,PersonalPage
+- 10.22 11:00 chenyan Update upload;Add insert Video,insert Article
+- 10.22 18:48 chenyan Add CorsFilter;Update VideoMapper,ArticleMapper,Transactional
+- 10.23 10:00 fanyuhongzhe Update Article,Video,PersonalPage Add DishArticleDTO,DishVideoDTO
+- 10.23 21:45 chenyan Update resources path,upload path
+- 10.26 15:30 chenyan Update shiro's urls
