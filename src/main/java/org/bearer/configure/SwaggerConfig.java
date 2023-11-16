@@ -23,7 +23,7 @@ import java.util.List;
 import static springfox.documentation.schema.AlternateTypeRules.newRule;
 
 /**
- * @author Li
+ * @author fyhz
  * @version 1.0
  * @date Created in 2023/10/21 9:39
  */
