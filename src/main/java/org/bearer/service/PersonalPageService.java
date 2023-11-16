@@ -8,9 +8,9 @@ import org.bearer.entity.po.Article;
 import org.bearer.entity.vo.Page;
 
 /**
- * @author fanyuhongzhe
+ * @author guanjiamin
  * @description
- * @date 6/15/21 10:50 PM
+ * @date 01/11/23 10:50 PM
  */
 public interface PersonalPageService {
     /**

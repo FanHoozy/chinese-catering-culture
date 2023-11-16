@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
 /**
- * @author Li
+ * @author chengzhimin
  * @version 1.0
- * @date Created in 2021/6/18 14:45
+ * @date Created in 2023/10/18 14:45
  */
 @RestController
 @RequestMapping("/dynamic")

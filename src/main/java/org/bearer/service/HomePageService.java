@@ -5,9 +5,9 @@ import org.bearer.entity.vo.*;
 import java.util.List;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/9 19:48
+ * @date Created in 2023/11/01 19:48
  */
 public interface HomePageService {
 

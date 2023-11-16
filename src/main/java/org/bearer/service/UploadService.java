@@ -5,9 +5,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author Li
+ * @author guanJiamin
  * @version 1.0
- * @date Created in 2021/6/18 15:08
+ * @date Created in 2023/11/01 15:08
  */
 public interface UploadService {
     /**

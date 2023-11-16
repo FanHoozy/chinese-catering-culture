@@ -17,9 +17,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author fanyuhongzhe
+ * @author guanjiamin
  * @description
- * @date 6/15/21 11:45 PM
+ * @date 01/11/23 11:45 PM
  */
 @Service
 public class AdministratorServiceImpl implements AdministratorService {

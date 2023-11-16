@@ -4,9 +4,9 @@ import org.bearer.entity.dto.Ids;
 import org.bearer.entity.dto.PostId;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/17 12:56
+ * @date Created in 2023/11/01 12:56
  */
 public interface PraiseService {
 

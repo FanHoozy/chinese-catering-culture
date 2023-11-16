@@ -5,9 +5,9 @@ import org.bearer.entity.dto.PostId;
 import org.bearer.entity.vo.Page;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/18 15:41
+ * @date Created in 2023/11/01 15:41
  */
 public interface DynamicService {
     /**

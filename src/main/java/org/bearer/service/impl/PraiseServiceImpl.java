@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/17 12:57
+ * @date Created in 2023/11/01 12:57
  */
 @Service
 public class PraiseServiceImpl implements PraiseService {

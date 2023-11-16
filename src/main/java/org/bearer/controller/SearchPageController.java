@@ -13,9 +13,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author fanyuhongzhe
+ * @author chengzhimin
  * @description search module
- * @date 6/10/21 1:45 PM
+ * @date Created in 2023/10/9 19:02
  */
 @RestController
 @RequestMapping(value = "/search")

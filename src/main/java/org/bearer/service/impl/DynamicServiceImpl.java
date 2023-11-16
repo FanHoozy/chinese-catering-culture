@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author Li
+ * @author guanjiamin
  * @version 1.0
- * @date Created in 2021/6/18 15:41
+ * @date Created in 2023/11/01 15:41
  */
 @Service
 public class DynamicServiceImpl implements DynamicService {

@@ -8,9 +8,9 @@ import org.bearer.entity.vo.*;
 import java.util.List;
 
 /**
- * @author fanyuhongzhe
+ * @author guanjiamin
  * @description
- * @date 6/15/21 11:43 PM
+ * @date 01/11/23 11:43 PM
  */
 public interface AdministratorService {
 

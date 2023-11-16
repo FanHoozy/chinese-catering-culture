@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
 /**
- * @author Li
+ * @author chengzhimmin
  * @version 1.0
- * @date Created in 2021/6/11 13:25
+ * @date Created in 2023/10/11 13:25
  */
 @RestController
 @RequiresRoles(value = {"user", "admin"}, logical = Logical.OR)

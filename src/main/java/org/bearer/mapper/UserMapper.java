@@ -7,9 +7,9 @@ import org.bearer.entity.vo.UserVO;
 import java.util.List;
 
 /**
- * @author Li
+ * @author chenmengyu
  * @version 1.0
- * @date Created in 2021/6/10 13:49
+ * @date Created in 202311/14 13:49
  */
 @Mapper
 public interface UserMapper {
